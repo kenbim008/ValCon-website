@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ValCon Inc | Business & Management Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0F2A44;
+      --secondary:#F47C20;
+      --accent:#1FA3A8;
+      --bg:#F5F7FA;
+      --text:#2A2A2A;
+      --muted:#6B7280;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    /* HEADER */
+    header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:100}
+    .nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+    .logo{font-size:24px;font-weight:700;color:var(--primary)}
+    .logo span{color:var(--secondary)}
+    nav ul{list-style:none;display:flex;gap:28px;align-items:center}
+    nav li{position:relative;font-weight:500}
+    nav li ul{display:none;position:absolute;top:100%;left:0;background:#fff;min-width:220px;box-shadow:0 10px 25px rgba(0,0,0,.08);border-radius:8px;padding:10px 0}
+    nav li:hover ul{display:block}
+    nav li ul li{padding:10px 20px;white-space:nowrap}
+    nav li ul li:hover{background:var(--bg)}
+    .cta{background:var(--secondary);color:#fff;padding:10px 18px;border-radius:8px;font-weight:600}
+
+    /* HERO */
+    .hero{background:linear-gradient(120deg,var(--primary),#163A5F);color:#fff}
+    .hero-inner{max-width:1200px;margin:auto;padding:90px 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+    .hero h1{font-size:44px;line-height:1.2;margin-bottom:16px}
+    .hero p{font-size:18px;color:#E5E7EB;margin-bottom:28px}
+    .hero-buttons a{margin-right:14px}
+
+    /* SECTION */
+    section{padding:80px 24px}
+    .container{max-width:1200px;margin:auto}
+    .section-title{text-align:center;margin-bottom:60px}
+    .section-title h2{font-size:34px;color:var(--primary)}
+    .section-title p{color:var(--muted);margin-top:10px}
+
+    /* SERVICES */
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+    .card{background:#fff;border-radius:16px;padding:30px;box-shadow:0 12px 30px rgba(0,0,0,.06);transition:.3s}
+    .card:hover{transform:translateY(-6px)}
+    .card h3{color:var(--primary);margin-bottom:10px}
+    .card p{color:var(--muted);font-size:15px}
+
+    /* ABS */
+    .abs{background:#fff;border-radius:24px;padding:60px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+    .badge{display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:999px;font-size:13px;margin-bottom:14px}
+
+    /* CTA */
+    .cta-block{background:var(--secondary);color:#fff;text-align:center;border-radius:24px;padding:70px 24px}
+    .cta-block h2{font-size:36px;margin-bottom:14px}
+    .cta-block p{max-width:700px;margin:0 auto 26px}
+
+    /* FOOTER */
+    footer{background:var(--primary);color:#D1D5DB;padding:70px 24px}
+    .footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    footer h4{color:#fff;margin-bottom:14px}
+    footer a{display:block;color:#D1D5DB;margin-bottom:8px;font-size:14px}
+    .copyright{text-align:center;margin-top:50px;color:#9CA3AF;font-size:14px}
+
+    @media(max-width:900px){
+      .hero-inner,.abs{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Val<span>Con</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>Services
+          <ul>
+            <li><a href="business-consulting.html">Business Consulting & Advisory</a></li>
+            <li><a href="training-development.html">Training & Professional Development</a></li>
+            <li>Career Consulting</li>
+            <li>Outsourcing & Job Placement</li>
+          </ul>
+        </li>
+        <li>Alberta Business School
+          <ul>
+            <li>Business Analysis Programs</li>
+            <li>Cybersecurity Bootcamps</li>
+            <li>Professional Certifications</li>
+          </ul>
+        </li>
+        <li>Insights
+          <ul>
+            <li>Publications</li>
+            <li>Podcasts</li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="auth.html" style="margin-right:16px;font-weight:600">Login / Admin</a><a class="cta" href="#">Book a Consultation</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Strategic Consulting for Sustainable Growth</h1>
+      <p>ValCon Inc. partners with organizations and professionals to deliver measurable results through strategy, talent development, and execution excellence.</p>
+      <div class="hero-buttons">
+        <a class="cta" href="#">Our Services</a>
+        <a href="#" style="color:#fff;font-weight:600">Learn About ABS →</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" style="width:100%;border-radius:24px" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>What We Do</h2>
+      <p>Integrated consulting, training, and career services designed for impact</p>
+    </div>
+    <div class="services">
+      <div class="card"><h3>Business Consulting & Advisory</h3><p>Strategy, operations, change management, and performance optimization tailored to your organization.</p><br><a class="cta" href="business-consulting.html">Learn More</a></div>
+      <div class="card"><h3>Training & Professional Development</h3><p>Industry-aligned programs through Alberta Business School to build future-ready capabilities.</p><br><a class="cta" href="training-development.html">Learn More</a></div>
+      <div class="card"><h3>Career Consulting</h3><p>Resume optimization, interview coaching, and career transition support.</p></div>
+      <div class="card"><h3>Outsourcing & Job Placement</h3><p>Connecting organizations with qualified professionals through flexible engagement models.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container abs">
+    <div>
+      <span class="badge">Education Partner</span>
+      <h2>Alberta Business School (ABS)</h2>
+      <p>ABS is an IIBA® Endorsed Education Provider delivering practical, hands-on programs in business analysis, cybersecurity, and enterprise transformation.</p>
+      <p>Our instructors combine real-world expertise with instructional excellence to prepare learners for today’s evolving business landscape.</p>
+      <a class="cta" href="#">Explore Programs</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" style="width:100%;border-radius:24px" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-block">
+      <h2>Ready to Move Forward?</h2>
+      <p>Book a strategy session with ValCon Inc. and discover how we can support your growth objectives.</p>
+      <a class="cta" href="#">Schedule an Appointment</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>ValCon Inc.</h4>
+      <p>Business & Management Consulting focused on partnership, professionalism, and results.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#">Consulting & Advisory</a>
+      <a href="#">Training & Development</a>
+      <a href="#">Career Consulting</a>
+      <a href="#">Outsourcing</a>
+    </div>
+    <div>
+      <h4>Education</h4>
+      <a href="#">Alberta Business School</a>
+      <a href="#">Certifications</a>
+      <a href="#">Bootcamps</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="#">info@valconsult.com</a>
+      <a href="#">Calgary, Alberta</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 ValCon Inc. All rights reserved.</div>
+</footer>
+
+
+</body>
+
+
+</html>
+
+<!-- ================= BACKEND / ADMIN (SEPARATE PAGES) =================
+Admin backend is intentionally separated from public pages.
+
+Files to deploy alongside this site:
+
+1) auth.html  (Signup / Login)
+- Accessible from header "Login / Admin" tab
+- Validates Admin credentials
+- Redirects to admin.html on success
+
+2) admin.html (Admin Dashboard)
+- Upload and edit page content
+- Upload videos and assign to pages
+- Content dynamically rendered on public pages (API-driven in production)
+
+Default Admin Credentials (demo):
+Email: admin@valconsult.com
+Password: ValCon@2026
+
+Recommended production stack:
+Node.js + Express | Firebase / MongoDB | JWT Auth | Cloud video storage
+================= END BACKEND NOTES ================= -->
